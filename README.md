@@ -7,6 +7,8 @@ Fed up of using templates where the libraries have been manually installed, maki
 These templates are here to free you of your frustrations!
 
 * Several templates, with varying levels of basic functionality provided.
+  * Web template with jQuery and Modernizr
+  * Web template with Bootstrap, jQuery, and Modernizr
 * Libraries installed via Nuget for easy upgrading and removal.
 * Web.config configured to allow Web Essentials Browser Link to work with static HTML sites.
 
