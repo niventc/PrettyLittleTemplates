@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>PrettyLittleWebTemplate</Name>
-    <Description>PrettyLittleWebTemplate</Description>
+    <Name>Pretty Little Web Template</Name>
+    <Description>Pretty Little Web Template</Description>
     <Icon>PrettyLittleWebTemplate.ico</Icon>
     <ProjectType>Web</ProjectType>
     <ProjectSubType>CSharp</ProjectSubType>
