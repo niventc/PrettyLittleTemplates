@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>PrettyLittleWebTemplate</Name>
+    <Description>PrettyLittleWebTemplate</Description>
+    <Icon>PrettyLittleWebTemplate.ico</Icon>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>f7989352-731a-48bf-9395-a95cb6a1f560</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>PrettyLittleWebTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">readme.md</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="PrettyLittleTemplates..9cbb7780-460d-418a-a788-ebc935267c56">
+      <package id="jQuery" version="2.1.3" targetFramework="net45" />
+      <package id="Modernizr" version="2.8.3" targetFramework="net45" />
+    </packages>
+  </WizardData>
+</VSTemplate>
