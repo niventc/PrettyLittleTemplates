@@ -103,6 +103,13 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
+    <ProjectReference Include="..\PrettyLittleDotNetCoreWebTemplate\PrettyLittleDotNetCoreWebTemplate.csproj">
+      <Project>{7D1A2F79-2719-4C4F-AB6E-10750EC896BB}</Project>
+      <Name>PrettyLittleDotNetCoreWebTemplate</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\PrettyLittleWebTemplate\PrettyLittleWebTemplate.csproj">
       <Project>{B32C91F7-9812-49C1-B480-DCD63D4A26C0}</Project>
       <Name>PrettyLittleWebTemplate</Name>

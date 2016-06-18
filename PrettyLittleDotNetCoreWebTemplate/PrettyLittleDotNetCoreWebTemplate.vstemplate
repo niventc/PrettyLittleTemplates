@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Pretty Little .Net Core Web Template</Name>
+    <Description>Pretty Little .Net Core Web Template</Description>
+    <Icon>PrettyLittleDotNetCoreWebTemplate.ico</Icon>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>C9A06F48-322B-408E-B357-A682D8F162E4</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>PrettyLittleDotNetCoreWebTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.xproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true">wwwroot/index.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">_project.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Startup.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">readme.md</ProjectItem>
+      <ProjectItem ReplaceParameters="true">web.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

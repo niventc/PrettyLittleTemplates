@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="PrettyLittleTemplates..9cbb7780-460d-418a-a788-ebc935267c56" Version="1.0" Language="en-US" Publisher="Vincent Sparkes" />
+    <Identity Id="PrettyLittleTemplates..9cbb7780-460d-418a-a788-ebc935267c56" Version="2.0" Language="en-US" Publisher="Vincent Sparkes" />
     <DisplayName>PrettyLittleTemplates</DisplayName>
     <Description xml:space="preserve">Pretty and little templates.</Description>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
     <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
     <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
   </Installation>
@@ -16,5 +15,6 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="PrettyLittleWebTemplate" d:TargetPath="|PrettyLittleWebTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="PrettyLittleBootstrapTemplate" d:TargetPath="|PrettyLittleBootstrapTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="PrettyLittleDotNetCoreWebTemplate" d:TargetPath="|PrettyLittleDotNetCoreWebTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
   </Assets>
 </PackageManifest>

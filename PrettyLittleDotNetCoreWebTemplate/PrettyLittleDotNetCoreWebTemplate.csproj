@@ -29,12 +29,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{B32C91F7-9812-49C1-B480-DCD63D4A26C0}</ProjectGuid>
+    <ProjectGuid>{7d1a2f79-2719-4c4f-ab6e-10750ec896bb}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PrettyLittleWebTemplate</RootNamespace>
-    <AssemblyName>PrettyLittleWebTemplate</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>PrettyLittleDotNetCoreWebTemplate</RootNamespace>
+    <AssemblyName>PrettyLittleDotNetCoreWebTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -74,48 +74,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AssemblyInfo.cs" />
-    <None Include="ProjectTemplate.csproj">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PrettyLittleWebTemplate.ico" />
-    <Content Include="Web.config" />
-    <None Include="readme.md" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <None Include="PrettyLittleDotNetCoreWebTemplate.vstemplate" />
+    <Content Include="ProjectTemplate.xproj" />
+    <None Include="PrettyLittleDotNetCoreWebTemplate.ico" />
+    <Content Include="readme.md" />
+    <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="PrettyLittleWebTemplate.vstemplate">
-      <SubType>Designer</SubType>
-    </VSTemplate>
+    <VSTemplate Include="PrettyLittleDotNetCoreWebTemplate.vstemplate" />
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="index.html" />
+    <Content Include="_project.json" />
+    <Content Include="wwwroot\index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
